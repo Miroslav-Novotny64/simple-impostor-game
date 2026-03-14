@@ -1,0 +1,538 @@
+Paříž,Bageta
+Londýn,Mlha
+Praha,Most
+Berlín,Zeď
+Řím,Koloseum
+New York,Mrakodrap
+Tokio,Neon
+Moskva,Náměstí
+Madrid,Býk
+Vídeň,Valčík
+Atény,Sloup
+Káhira,Pyramida
+Dubaj,Písek
+Sydney,Opera
+Rio de Janeiro,Karneval
+Peking,Zeď
+Bombaj,Vlak
+Istanbul,Most
+Amsterdam,Kanál
+Benátky,Gondola
+Barcelona,Katedrála
+Lisabon,Tramvaj
+Dublin,Pivo
+Brusel,Vafle
+Kodaň,Mořská vína
+Oslo,Fjord
+Stockholm,Ostrovy
+Helsinky,Sauna
+Varšava,Povstání
+Budapešť,Lázně
+Praha,Hrad
+Bratislava,Dunaj
+Záhřeb,Katedrála
+Lublaň,Drak
+Bělehrad,Pevnost
+Sofie,Kostel
+Bukurešť,Palác
+Reykjavík,Ledovec
+Monako,Kasino
+Vatikán,Papež
+San Marino,Hora
+Andorra,Hory
+Lucemburk,Banka
+Vaduz,Hrad
+Kyjev,Kopule
+Minsk,Beton
+Riga,Secese
+Tallinn,Hradby
+Vilnius,Kostely
+Kišiňov,Víno
+Tbilisi,Hory
+Jerevan,Hora
+Baku,Ropa
+Nur-Sultan,Step
+Taškent,Hedvábí
+Ašchabad,Mramor
+Dušanbe,Hory
+Kábul,Hory
+Islámábád,Hora
+Dháka,Řeka
+Dillí,Prach
+Káthmándú,Himaláje
+Thimphu,Klášter
+Peking,Císař
+Soul,Modernost
+Tokio,Věž
+Tchaj-pej,Mrakodrap
+Hanoj,Nudle
+Bangkok,Chrám
+Vientiane,Dunaj
+Phnompenh,Chrám
+Kuala Lumpur,Věže
+Singapur,Zahrada
+Jakarta,Zácpa
+Manila,Ostrov
+Dili,Moře
+Nairobi,Safari
+Addis Abeba,Káva
+Chartúm,Nila
+Káhira,Sfinga
+Tripolis,Moře
+Tunis,Kartágo
+Alžír,Moře
+Rabat,Trhy
+Nuakšot,Písek
+Dakar,Rally
+Gambie,Řeka
+Bamako,Niger
+Ouagadougou,Step
+Niamey,Sahara
+N'Djamena,Jezero
+Abuja,Kopce
+Yaoundé,Prales
+Bangui,Řeka
+Kinshasa,Kongo
+Brazzaville,Řeka
+Luanda,Moře
+Libreville,Prales
+Malabo,Ostrov
+Pretoria,Diamanty
+Kapské Město,Hora
+Maseru,Hory
+Mbabane,Hory
+Maputo,Přístav
+Harare,Vodopády
+Lusaka,Měď
+Lilongwe,Jezero
+Dodoma,Savana
+Kampala,Jezero
+Kigali,Kopce
+Bujumbura,Jezero
+Mogadišo,Písek
+Džibuti,Moře
+Asmara,Hory
+Antananarivo,Vanilka
+Moroni,Ostrov
+Victoria,Pláž
+Port Louis,Třtina
+Washington,Bílý dům
+Ottawa,Javor
+Mexiko,Kaktus
+Havana,Doutník
+Kingston,Reggae
+Nassau,Piráti
+Guatemala,Majové
+Belmopan,Prales
+San Salvador,Sopka
+Tegucigalpa,Hory
+Managua,Jezero
+San José,Příroda
+Panama,Průplav
+Bogotá,Káva
+Caracas,Ropa
+Quito,Rovník
+Lima,Inka
+La Paz,Výška
+Asunción,Řeka
+Montevideo,Moře
+Buenos Aires,Tango
+Santiago de Chile,Andy
+Brasília,Architektura
+Rio de Janeiro,Socha
+Canberra,Klokan
+Wellington,Vítr
+Port Moresby,Prales
+Honiara,Pacifik
+Majuro,Atol
+Tarawa,Palma
+Nauru,Fosfát
+Funafuti,Voda
+Apia,Ostrov
+Nuku'alofa,Král
+Suva,Moře
+Palikir,Prales
+Koror,Potápění
+Melekeok,Ostrov
+Hory,Sníh
+Les,Jehličí
+Moře,Sůl
+Oceán,Hloubka
+Ostrov,Palma
+Poušť,Barka
+Step,Tráva
+Savana,Akácie
+Prales,Vlhkost
+Bažina,Blato
+Jezero,Voda
+Řeka,Proud
+Potok,Kameny
+Vodopád,Hluk
+Sopka,Láva
+Ledovec,Chlad
+Jeskyně,Tma
+Údolí,Kopce
+Útes,Výška
+Pláž,Písek
+Džungle,Liána
+Tundra,Mech
+Tajga,Sibiř
+Pampy,Koně
+Prérie,Obzor
+Korálový útes,Barvy
+Záliv,Loď
+Poloostrov,Tvar
+Průliv,Proud
+Břeh,Vlny
+Pobřeží,Racci
+Vnitrozemí,Vzdálenost
+Hranice,Čára
+Město,Doprava
+Vesnice,Klid
+Sídliště,Panel
+Centrum,Náměstí
+Předměstí,Zahrady
+Průmyslová zóna,Továrna
+Přístav,Jeřáb
+Letiště,Ranvej
+Nádraží,Koleje
+Metro,Tunel
+Zastávka,Jízdní řád
+Dálnice,Asfalt
+Most,Oblouk
+Tunel,Světlo
+Park,Lavička
+Zahrada,Květiny
+Hřiště,Míč
+Obchod,Regál
+Tržnice,Stánek
+Restaurace,Menu
+Kavárna,Vůně
+Kino,Plátno
+Divadlo,Opona
+Muzeum,Exponát
+Galerie,Obraz
+Škola,Tabule
+Nemocnice,Bílá
+Kostel,Zvon
+Hrad,Hradby
+Zámek,Park
+Věž,Výhled
+Radnice,Hodiny
+Soud,Právo
+Banka,Trezor
+Pošta,Dopis
+Knihovna,Police
+Stadion,Tribuna
+Bazén,Chlór
+Tělocvična,Pot
+Farma,Traktor
+Mlýn,Kolo
+Pila,Dřevo
+Lom,Kámen
+Důl,Uhlí
+Elektrárna,Kouř
+Přehrada,Hráz
+Maják,Světlo
+Vězení,Mříže
+Kasárna,Uniforma
+Hřbitov,Ticho
+Klášter,Mnich
+Poutní místo,Cesta
+Zřícenina,Kámen
+Rozhledna,Vítr
+Koupaliště,Léto
+Kemp,Stan
+Chata,Dřevo
+Chalupa,Babička
+Hotel,Recepce
+Penzion,Postel
+Ubytovna,Společnost
+Internát,Pokoj
+Domov,Teplo
+Byt,Klíče
+Panelák,Výtah
+Mrakodrap,Sklo
+Vila,Bazén
+Palác,Zlato
+Sídlo,Brána
+Hajný,Les
+Myslivna,Trofej
+Hájovna,Klid
+Salaš,Ovce
+Fojtství,Dřevo
+Pivovar,Slad
+Lihovar,Panák
+Cukrovar,Řepa
+Sklárna,Sklo
+Papírna,Role
+Textilka,Nit
+Tiskárna,Inkoust
+Vinařství,Sud
+Sklípky,Sklenka
+Hospoda,Pěna
+Bar,Barman
+Klub,Hudba
+Diskotéka,Světla
+Koncertní hala,Zvuk
+Opera,Zpěv
+ZOO,Klec
+Botanická zahrada,Skleník
+Planetárium,Hvězdy
+Observatoř,Teleskop
+Klášter,Ticho
+Svatyně,Kadidlo
+Pagoda,Střecha
+Mešita,Minaret
+Synagoga,Kniha
+Katedrála,Vitráž
+Kaple,Poklid
+Boží muka,Cesta
+Křížek,Pole
+Studánka,Voda
+Pramen,Země
+Lázně,Oplatka
+Sanatorium,Klid
+Rehabilitační ústav,Pohyb
+Dětský domov,Naděje
+Domov důchodců,Věk
+Věznice,Svoboda
+Policejní stanice,Maják
+Hasičárna,Auto
+Radnice,Úřad
+Soudní budova,Váhy
+Parlament,Debata
+Vládní vila,Garda
+Ambasáda,Vlajka
+Konzulát,Razítko
+Expozice,Vitrína
+Výstaviště,Hala
+Tržiště,Hluk
+Jarmark,Historie
+Pouť,Kolotoče
+Cirkus,Šapitó
+Zábavní park,Adrenalin
+Aquapark,Tobogán
+Zoo,Zvuky
+Safari,Teréňák
+Národní park,Ochrana
+Rezervace,Klid
+Chráněná oblast,Cedule
+Památka,UNESCO
+Světové dědictví,Historie
+Místo činu,Páska
+Archeologické naleziště,Štěteček
+Pravěké osídlení,Pazourek
+Hradiště,Val
+Mohyla,Kameny
+Bo Bojiště,Krev
+Pomník,Kytice
+Památník,Jména
+Socha,Bronz
+Busta,Tvář
+Fontána,Voda
+Vodotrysk,Mokro
+Náměstí,Dlažba
+Ulice,Chodník
+Třída,Stromy
+Ulička,Křivost
+Průchod,Zkratka
+Nábřeží,Zeď
+Most,Voda
+Lávka,Dřevo
+Nadchod,Schody
+Podchod,Tma
+Nájezd,Asfalt
+Kruhový objezd,Kruh
+Křižovatka,Semafor
+Parkoviště,Auto
+Garáž,Vrata
+Benzínka,Palivo
+Myčka,Kartáče
+Servis,Nářadí
+Vrakoviště,Šrot
+Skládka,Odpad
+Čistírna odpadních vod,Vůně
+Spalovna,Oheň
+Vodojem,Věž
+Plynojem,Koule
+Vysílač,Signál
+Maják,Útes
+Přístaviště,Molo
+Kotviště,Kotva
+Zdymadlo,Hladina
+Přehrada,Beton
+Jez,Pěna
+Kanál,Beton
+Příkop,Voda
+Val,Hlína
+Hradba,Kámen
+Brána,Průjezd
+Průsmyk,Cesta
+Sedlo,Hory
+Vrchol,Kříž
+Hřeben,Výhled
+Úpatí,Začátek
+Stráň,Tráva
+Mez,Keře
+Polní cesta,Prach
+Lesní cesta,Jehličí
+Stezka,Značka
+Cyklostezka,Kolo
+Sjezdovka,Vlek
+Běžecká trasa,Stopa
+Turistická trasa,Barva
+Odpočívadlo,Stůl
+Vyhlídka,Zábradlí
+Altán,Střecha
+Posezení,Oheň
+Krkonoše,Vršek
+Alpy,Sníh
+Himaláje,Vrh
+Andy,Lama
+Sahara,Písek
+Amazonie,Řeka
+Austrálie,Klokan
+Antarktida,Tučňák
+Arktida,Led
+Grónsko,Zima
+Island,Gejzír
+Madagaskar,Lemur
+Galapágy,Želva
+Havaj,Sopek
+Karibik,Piráti
+Středomoří,Oliva
+Skandinávie,Viking
+Balkán,Hory
+Kavkaz,Hory
+Tibet,Chrám
+Sibiř,Mráz
+Aljaška,Zlato
+Kalifornie,Slunce
+Texas,Kovboj
+Florida,Bažina
+Bavorsko,Pivo
+Toskánsko,Víno
+Provence,Levandule
+Skotsko,Kilt
+Wales,Drak
+Irsko,Zelená
+Bretaň,Moře
+Korsika,Napoleon
+Sicílie,Sopka
+Kréta,Labyrint
+Kypr,Ostrov
+Afganistán,Hory
+Irák,Ropa
+Írán,Koberec
+Izrael,Zeď
+Jordánsko,Skála
+Libanon,Cedr
+Sýrie,Historie
+Vietnam,Rýže
+Kambodža,Chrám
+Laos,Slon
+Mongolsko,Jurta
+Nepál,Hora
+Srí Lanka,Čaj
+Maledivy,Atol
+Seychely,Pláž
+Mladá Boleslav,Auto
+Pilsen,Pivo
+Ostrava,Uhlí
+Brno,Drak
+Zlín,Bota
+Karlovy Vary,Vřídlo
+Mariánské Lázně,Léčba
+Františkovy Lázně,Bílá
+Špindlerův Mlýn,Vlek
+Pec pod Sněžkou,Sněžka
+Adršpach,Skály
+Český ráj,Hrad
+Jižní Čechy,Rybník
+Šumava,Les
+Morava,Vinný sklep
+Beskydy,Radhošť
+Jeseníky,Praděd
+Krkonoše,Sněžka
+Jizerské hory,Žula
+Orlické hory,Bunkr
+České Švýcarsko,Pravčická brána
+Lužické hory,Hvozd
+Krušné hory,Perník
+Český les,Hraničář
+Podyjí,Řeka
+Pálava,Vinice
+Slovácko,Folklór
+Haná,Tvarůžky
+Valašsko,Frgál
+Chodsko,Čakan
+Domažlice,Hlava
+Kutná Hora,Kostnice
+Telč,Náměstí
+Litomyšl,Zámek
+Olomouc,Sloup
+Kroměříž,Zahrady
+Lednice,Led
+Valtice,Víno
+Hluboká,Bílá
+Bouzov,Pohádka
+Karlštejn,Koruna
+Konopiště,Zbraně
+Křivoklát,Hvozd
+Terezín,Pevnost
+Lidice,Květ
+Pustevny,Libušín
+Bezděz,Mácháč
+Kost,Údolí
+Trosky,Dvě
+Sněžka,Lanovka
+Praděd,Vysílač
+Lysá hora,Vítr
+Radhošť,Socha
+Říp,Rotunda
+Blaník,Rytíři
+Milešovka,Vítr
+Sněžník,Slon
+Velká Javorina,Hranice
+Králický Sněžník,Pramen
+Dolní Morava,Stezka
+Lipno,Přehrada
+Máchovo jezero,Písek
+Novomlýnské nádrže,Víno
+Vranov,Hráz
+Orlík,Most
+Slapy,Chaty
+Dalešice,Pivovar
+Hracholusky,Voda
+Svět,Třeboň
+Rožmberk,Dub
+Punkevní jeskyně,Vláček
+Macocha,Propast
+Koněpruské jeskyně,Vápno
+Prachovské skály,Hrát
+Teplické skály,Turista
+Hrubá Skála,Vyhlídka
+Pravčická brána,Oblouk
+Panská skála,Varhany
+Mumlavské vodopády,Voda
+Rešovské vodopády,Potok
+Keprník,Kleč
+Králický Sněžník,Hranice
+Velký Javor,Soused
+Klínowec,Věž
+Ještěd,Jehla
+Bezděz,Věž
+Kunětická hora,Opatov
+Pernštejn,Mramor
+Svojanov,Příkop
+Rabí,Zřícenina
+Kašperk,Kelt
+Točník,Medvěd
+Žebrák,Věž
+Valdek,Lesy
+Krakovec,Hus
+Hazmburk,Zuby
+Okoř,Bílá paní
+Kokořín,Údolí
+ Houska,Brána
