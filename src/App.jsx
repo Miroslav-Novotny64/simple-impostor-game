@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import {  AnimatePresence } from 'framer-motion';
 import { Plus, X, Play, ArrowRight, RefreshCw, Eye, Users, Check, AlertCircle, Edit2, Sun, Moon } from 'lucide-react';
 import { cn } from './lib/utils';
 import { CATEGORIES } from './data/categories';
@@ -85,6 +85,9 @@ function App() {
     setGameState('reveal');
     setHoldProgress(0);
     setHasRevealed(false);
+    
+    // Push history state
+    window.history.pushState({ gameState: 'reveal', currentPlayerReveal: 0 }, '');
   };
 
   const handleHoldStart = (e) => {
@@ -109,20 +112,45 @@ function App() {
 
   const nextReveal = () => {
     if (currentPlayerReveal < players.length - 1) {
-      setCurrentPlayerReveal(prev => prev + 1);
+      const nextIndex = currentPlayerReveal + 1;
+      setCurrentPlayerReveal(nextIndex);
       setHoldProgress(0);
       setHasRevealed(false);
+      window.history.pushState({ gameState: 'reveal', currentPlayerReveal: nextIndex }, '');
     } else {
       setGameState('discussion');
+      window.history.pushState({ gameState: 'discussion' }, '');
     }
   };
 
   const resetGame = () => {
     setGameState('lobby');
+    window.history.pushState({ gameState: 'lobby' }, '');
   };
 
   useEffect(() => {
-    return () => clearInterval(holdInterval.current);
+    const handlePopState = (event) => {
+      if (event.state) {
+        const { gameState, currentPlayerReveal } = event.state;
+        if (gameState) setGameState(gameState);
+        if (currentPlayerReveal !== undefined) setCurrentPlayerReveal(currentPlayerReveal);
+        setHoldProgress(0);
+        setHasRevealed(false);
+      } else {
+        // Fallback to lobby if no state
+        setGameState('lobby');
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    
+    // Set initial state
+    window.history.replaceState({ gameState: 'lobby' }, '');
+
+    return () => {
+      clearInterval(holdInterval.current);
+      window.removeEventListener('popstate', handlePopState);
+    };
   }, []);
 
   useEffect(() => {
