@@ -1,4 +1,4 @@
-# 💀 Impostor Game
+# Simple Impostor Game
 
 Modern PWA implementation of the classic "Impostor" social deduction game. Didn't want to pay for a app, so I build my own.
 
@@ -12,7 +12,7 @@ Modern PWA implementation of the classic "Impostor" social deduction game. Didn'
 - **Ikony**: Lucide React
 - **Stav**: React Hooks + LocalStorage Persistence
 
-## ✨ Functionalities
+## Functionalities
 
 - **Dark Mode**: Full support for dark mode with a toggle.
 - **PWA Ready**: Option to install as a mobile application.
@@ -20,7 +20,7 @@ Modern PWA implementation of the classic "Impostor" social deduction game. Didn'
 - **Modularity**: Word categories are stored in external CSV files for easy editing.
 - **Subtilní nápovědy**: Strategic hints designed to help the impostor guess without revealing themselves.
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 src/
@@ -31,7 +31,7 @@ src/
 └── index.css            # Global styles and HSL variables
 ```
 
-## 📝 How to add custom words
+## How to add custom words
 
 The game uses a modular category system in `src/data/categories/`. To add or edit words:
 
@@ -40,7 +40,7 @@ The game uses a modular category system in `src/data/categories/`. To add or edi
    - *Example: `Paříž,Bageta`*
 3. The category export is managed in `src/data/categories/index.js`.
 
-## 🛠️ Local Development
+## Local Development
 
 ```bash
 # Install dependencies
@@ -53,4 +53,4 @@ npm run dev
 npm run build
 ```
 
----
+I'll be happy for any contributions and I'l try to review them as fast as posible. I hope this can grow into a great app.
