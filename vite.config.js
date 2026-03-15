@@ -12,7 +12,7 @@ export default defineConfig({
       injectRegister: 'auto',
       includeAssets: ['favicon.ico', 'favicon.svg', 'apple-touch-icon.png'],
       manifest: {
-        id: '/',
+        id: '/index.html',
         name: 'Simple Impostor Game',
         short_name: 'Impostor',
         description: 'Moderní a rychlá implementace společenské hry Simple Impostor pro party večery.',
