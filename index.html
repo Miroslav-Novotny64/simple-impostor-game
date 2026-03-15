@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -7,47 +7,71 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Impostor" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="canonical" href="https://simple-impostor-game.fun/" />
     
-    <title>Simple Impostor Game | Najdi impostera</title>
-    <meta name="title" content="Simple Impostor Game | Najdi impostera" />
-    <meta name="description" content="Moderní a rychlá implementace společenské hry Simple Impostor. Jednoduchá pravidla, přes 1400 slov a skvělý design pro party večery." />
-    <meta name="keywords" content="simple impostor game, party hra, společenská hra, najdi impostera, pwa game, online hry pro skupinu" />
+    <title>Simple Impostor Game | Party společenská hra online</title>
+    <meta name="title" content="Simple Impostor Game | Party společenská hra online" />
+    <meta name="description" content="Zahrajte si Simple Impostor Game – moderní party hru pro skupinu přátel. Odhalte impostora mezi vámi v této rychlé společenské hře s více než 1400 slovy. Zdarma a bez instalace." />
+    <meta name="keywords" content="simple impostor game, party hra online, společenská hra, najdi impostora, hry na party, pwa hry, deduktivní hry" />
     <meta name="author" content="Miroslav Novotny" />
     <meta name="theme-color" content="#fefae0" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#05070a" media="(prefers-color-scheme: dark)" />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://simple-impostor-game.fun/" />
-    <meta property="og:title" content="Simple Impostor Game | Najdi impostera" />
-    <meta property="og:description" content="Moderní a rychlá implementace společenské hry Simple Impostor pro party večery." />
-    <meta property="og:image" content="/logo.png" />
+    <meta property="og:site_name" content="Simple Impostor Game" />
+    <meta property="og:title" content="Simple Impostor Game | Party společenská hra online" />
+    <meta property="og:description" content="Moderní a jednoduchá implementace společenské hry Simple Impostor pro party večery. Odhalte impostora!" />
+    <meta property="og:image" content="https://simple-impostor-game.fun/logo.png" />
+    <meta property="og:image:width" content="1255" />
+    <meta property="og:image:height" content="1249" />
+    <meta property="og:locale" content="cs_CZ" />
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://simple-impostor-game.fun/" />
-    <meta property="twitter:title" content="Simple Impostor Game | Najdi impostora" />
-    <meta property="twitter:description" content="Moderní a rychlá implementace společenské hry Simple Impostor pro party večery." />
-    <meta property="twitter:image" content="/logo.png" />
+    <meta property="twitter:title" content="Simple Impostor Game | Party společenská hra online" />
+    <meta property="twitter:description" content="Zábavná společenská hra pro přátele. Najděte impostora dřív, než vás přelstí!" />
+    <meta property="twitter:image" content="https://simple-impostor-game.fun/logo.png" />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebApplication",
+        "@type": "SoftwareApplication",
         "name": "Simple Impostor Game",
         "alternateName": "Najdi impostera",
-        "description": "A social deduction game for groups. One player is the impostor and doesn't know the secret word.",
+        "description": "Společenská deduktivní hra pro skupiny. Jeden hráč je impostor a nezná tajné slovo. Ostatní ho musí odhalit pomocí indicií.",
         "applicationCategory": "GameApplication",
-        "genre": "Social Deduction",
+        "genre": "Social Deduction Game",
         "operatingSystem": "Web, Android, iOS",
+        "url": "https://simple-impostor-game.fun/",
+        "author": {
+          "@type": "Person",
+          "name": "Miroslav Novotny"
+        },
         "offers": {
           "@type": "Offer",
           "price": "0",
-          "priceCurrency": "USD"
+          "priceCurrency": "CZK"
         }
       }
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- SEO Pre-render Content -->
+      <section style="display:none" aria-hidden="true">
+        <h1>Simple Impostor Game</h1>
+        <p>Vítejte v moderní webové implementaci populární společenské hry Impostor.</p>
+        <h2>Pravidla hry</h2>
+        <ul>
+          <li>Každý hráč obdrží tajné slovo, kromě jednoho – ten je Impostor.</li>
+          <li>Hráči postupně říkají jednu indicii k tajnému slovu.</li>
+          <li>Impostor musí blafovat a snažit se zapadnout, i když slovo nezná.</li>
+          <li>Na konci kola probíhá hlasování o tom, kdo je Impostor.</li>
+        </ul>
+        <p>Hra obsahuje tisíce slov v kategoriích jako jídlo, místa, slavné osobnosti a další.</p>
+      </section>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
