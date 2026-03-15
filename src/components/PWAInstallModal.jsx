@@ -4,6 +4,7 @@ import { Share, PlusSquare, Download, X, MoreVertical } from 'lucide-react';
 
 const PWAInstallModal = ({ isOpen, onClose }) => {
   const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  const isSamsung = /SamsungBrowser/i.test(navigator.userAgent);
   
   return (
     <AnimatePresence>
@@ -58,6 +59,30 @@ const PWAInstallModal = ({ isOpen, onClose }) => {
                           Zvol "Přidat na plochu" <PlusSquare size={18} className="text-primary" />
                         </p>
                         <p className="text-xs opacity-60">Sjeď v menu trochu níž.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : isSamsung ? (
+                <div className="space-y-4">
+                  <p className="text-sm font-medium opacity-80">V Samsung Internetu klikni na ikonu instalace:</p>
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 font-bold">1</div>
+                      <div className="space-y-1">
+                        <p className="font-bold text-sm flex items-center gap-2">
+                          Klepni na ikonu <PlusSquare size={18} className="text-primary" />
+                        </p>
+                        <p className="text-xs opacity-60">Najdeš ji v adresním řádku nahoře.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 font-bold">2</div>
+                      <div className="space-y-1">
+                        <p className="font-bold text-sm flex items-center gap-2">
+                          Zvol "Instalovat aplikaci"
+                        </p>
+                        <p className="text-xs opacity-60">Případně najdeš v menu pod třemi čárkami.</p>
                       </div>
                     </div>
                   </div>
