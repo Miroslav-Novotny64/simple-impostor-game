@@ -79,10 +79,10 @@
   }
 
   .dark {
-    --background: hsl(222 47% 4%);
+    --background: hsl(221, 50%, 6%);
     --foreground: hsl(210 40% 98%);
 
-    --card: hsl(222 47% 4%);
+    --card: hsl(221, 50%, 6%);
     --card-foreground: hsl(210 40% 98%);
 
     --popover: hsl(222 47% 4%);
@@ -113,9 +113,17 @@
   * {
     @apply border-border;
   }
+  html {
+    @apply bg-background;
+    overscroll-behavior: none;
+    background-color: var(--background);
+  }
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overscroll-behavior: none; /* Prevents showing white background on overscroll */
   }
 }
 

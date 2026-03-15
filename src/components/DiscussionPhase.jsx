@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { RefreshCw, AlertCircle } from 'lucide-react';
+import { RefreshCw } from 'lucide-react';
 
 /**
  * DiscussionPhase Component
@@ -23,26 +23,19 @@ const DiscussionPhase = ({ resetGame }) => {
           <div className="space-y-4">
             <h2 className="text-5xl font-black text-primary italic leading-tight uppercase tracking-tighter">Diskuse</h2>
             <p className="text-lg font-semibold text-muted-foreground leading-relaxed">
-              Všichni znají své úkoly.<br/>
+              Všichni znají své slovo.<br/>
               Teď najděte impostera!
             </p>
           </div>
           
-          <div className="grid gap-4 py-4">
-            <div className="flex items-start gap-4 text-left bg-background/50 p-4 rounded-2xl border border-border">
-              <div className="bg-primary/10 p-2 rounded-xl text-primary mt-1">
-                <AlertCircle size={20} />
-              </div>
-              <p className="text-sm font-medium">Ptají se všichni. Imposter maskuje, že nezná slovo, a snaží se ho uhodnout z vašich popisů!</p>
-            </div>
+          <div className="flex flex-col gap-3">
+            <button
+              onClick={resetGame}
+              className="w-full bg-primary text-primary-foreground py-5 rounded-2xl font-black text-xl flex items-center justify-center gap-3 shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all"
+            >
+              <RefreshCw size={24} /> NOVÁ HRA
+            </button>
           </div>
-
-          <button
-            onClick={resetGame}
-            className="w-full bg-primary text-primary-foreground py-5 rounded-2xl font-black text-xl flex items-center justify-center gap-3 shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all"
-          >
-            <RefreshCw size={24} /> NOVÁ HRA
-          </button>
         </div>
       </div>
     </motion.div>

@@ -44,7 +44,11 @@ const HowToPlayModal = ({ isOpen, onClose }) => {
               </div>
               <div className="flex gap-4">
                 <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 font-bold">4</div>
-                <p>Diskutujte a snažte se odhalit, kdo je imposter!</p>
+                <p>Jděte dokola a každý vždy řekněte slovo nebo slovní spojení týkající se tématu.</p>
+              </div>
+              <div className="flex gap-4">
+                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 font-bold">5</div>
+                <p>Až budete chtít, hlasujte pro impostora. Pokud odhalíte impostora, vyhráváte. Pokud ne, imposter vyhrává.</p>
               </div>
             </div>
 

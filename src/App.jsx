@@ -45,6 +45,20 @@ function App() {
     }
     return Object.keys(CATEGORIES);
   });
+
+  const [customCategories, setCustomCategories] = useState(() => {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('customCategories')) {
+      try {
+        return JSON.parse(localStorage.getItem('customCategories'));
+      } catch (e) {
+        console.error('Failed to parse customCategories from localStorage', e);
+      }
+    }
+    return {};
+  });
+
+  const allCategories = { ...CATEGORIES, ...customCategories };
+
   const [impostorIndex, setImpostorIndex] = useState(null);
   const [secretWord, setSecretWord] = useState(null);
   const [currentPlayerReveal, setCurrentPlayerReveal] = useState(0);
@@ -78,9 +92,78 @@ function App() {
     );
   };
 
+  const addCategory = (categoryName) => {
+    if (categoryName && !allCategories[categoryName]) {
+      setCustomCategories(prev => ({ ...prev, [categoryName]: [] }));
+      setSelectedCategories(prev => [...prev, categoryName]);
+    }
+  };
+
+  const importCategory = (categoryJson) => {
+    try {
+      const data = JSON.parse(categoryJson);
+      if (!data.name || !Array.isArray(data.words)) {
+        throw new Error('Nevalidní formát kategorie');
+      }
+
+      let newName = data.name;
+      let counter = 2;
+      while (allCategories[newName]) {
+        newName = `${data.name} ${counter}`;
+        counter++;
+      }
+
+      setCustomCategories(prev => ({
+        ...prev,
+        [newName]: data.words
+      }));
+      setSelectedCategories(prev => [...prev, newName]);
+      return true;
+    } catch (e) {
+      console.error('Failed to import category', e);
+      alert('Chyba při importu: ' + e.message);
+      return false;
+    }
+  };
+
+  const removeCategory = (categoryName) => {
+    if (customCategories[categoryName]) {
+      const newCustom = { ...customCategories };
+      delete newCustom[categoryName];
+      setCustomCategories(newCustom);
+      setSelectedCategories(prev => prev.filter(cat => cat !== categoryName));
+    }
+  };
+
+  const addWordToCategory = (categoryName, wordObj) => {
+    if (customCategories[categoryName]) {
+      setCustomCategories(prev => ({
+        ...prev,
+        [categoryName]: [...prev[categoryName], wordObj]
+      }));
+    }
+  };
+
+  const removeWordFromCategory = (categoryName, wordIndex) => {
+    if (customCategories[categoryName]) {
+      const newWords = [...customCategories[categoryName]];
+      newWords.splice(wordIndex, 1);
+      setCustomCategories(prev => ({
+        ...prev,
+        [categoryName]: newWords
+      }));
+    }
+  };
+
   const startGame = () => {
     const randomImpostor = Math.floor(Math.random() * players.length);
-    const availableWords = selectedCategories.flatMap(cat => CATEGORIES[cat]);
+    const availableWords = selectedCategories.flatMap(cat => allCategories[cat]);
+    
+    if (availableWords.length === 0) {
+      alert('Vybrané kategorie neobsahují žádná slova!');
+      return;
+    }
+
     const randomWord = availableWords[Math.floor(Math.random() * availableWords.length)];
     
     setImpostorIndex(randomImpostor);
@@ -170,6 +253,10 @@ function App() {
     localStorage.setItem('selectedCategories', JSON.stringify(selectedCategories));
   }, [selectedCategories]);
 
+  useEffect(() => {
+    localStorage.setItem('customCategories', JSON.stringify(customCategories));
+  }, [customCategories]);
+
   const toggleTheme = () => {
     setTheme(prev => prev === 'dark' ? 'light' : 'dark');
   };
@@ -211,7 +298,13 @@ function App() {
               editingPlayerId={editingPlayerId}
               setEditingPlayerId={setEditingPlayerId}
               updatePlayerName={updatePlayerName}
-              CATEGORIES={CATEGORIES}
+              CATEGORIES={allCategories}
+              customCategories={customCategories}
+              addCategory={addCategory}
+              removeCategory={removeCategory}
+              importCategory={importCategory}
+              addWordToCategory={addWordToCategory}
+              removeWordFromCategory={removeWordFromCategory}
               selectedCategories={selectedCategories}
               toggleCategory={toggleCategory}
               startGame={startGame}
