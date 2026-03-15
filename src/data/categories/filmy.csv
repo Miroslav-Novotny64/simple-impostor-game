@@ -25,7 +25,6 @@ Odvážná Vaiana,Oceán
 Encanto,Dům
 Coco,Kytara
 Luca,Voda
-Turning Red,Panda
 Spider-Man,Pavučina
 Iron Man,Brnění
 Thor,Kladivo
@@ -55,7 +54,7 @@ Zelená míle,Myš
 Gladiátor,Obilí
 Statečné srdce,Modrá
 Piráti z Karibiku,Rum
- Sherlock Holmes,Lupa
+Sherlock Holmes,Lupa
 Jurský park,Komár
 E.T. Mimozemšťan,Prst
 Návrat do budoucnosti,Auto
@@ -82,8 +81,6 @@ Sněhurka,Jablko
 Malá mořská víla,Mušle
 Kráska a zvíře,Růže
 Aladin,Lampa
-Mulan,Drak
-Pocahontas,Vítr
 Herkules,Svaly
 Tarzan,Liána
 Kniha džunglí,Vlci
@@ -94,52 +91,29 @@ Bambi,Laň
 Dumbo,Uši
 101 dalmatinů,Tečky
 Lady a Tramp,Špagety
-Aristokočky,Klavír
-Robin Hood,Luk
-Liška a pes,Les
-Oliver a přátelé,Město
-Zámek v oblacích,Klobouk
-Cesta do fantazie,Maska
 Můj soused Totoro,Deštník
-Princezna Mononoke,Vlk
-Kikiho doručovací služba,Koště
-Ponyo,Ryba
-Tvoje jméno,Kometa
-Tichý hlas,Znak
 Demon Slayer,Meč
-Jujutsu Kaisen,Prst
 One Piece,Klobouk
 Naruto,Čelenka
 Dragon Ball,Koule
-Pevnost Boyard,Klíč
-Pevnost,Zlato
-Mrtví lidé,Ticho
 Vlk z Wall Street,Peníze
 Velký Gatsby,Oslava
 La La Land,Klavír
 Bohemian Rhapsody,Mikrofon
 Elvis,Růžová
 Rocketman,Brýle
-Malé ženy,Dopis
 Pýcha a předsudek,Dopis
-Velká ryba,Příběh
-Amélie z Montmartru,Skřítka
 Nedotknutelní,Vozík
-Léto s kovbojem,Krávy
 S tebou mě baví svět,Bačkory
 Tři oříšky pro Popelku,Oříšek
 S čerty nejsou žerty,Peříčko
 Byl jednou jeden král,Sůl
 Pyšná princezna,Zahrada
-Císařův pekař,Golem
-Marečku, podejte mi pero,Hliník
+Marečku podejte mi pero,Hliník
 Pelíšky,Lžička
 Samotáři,Koláč
-Vratné lahve,Důchod
 Vesničko má středisková,Sluchátka
-Slunce, seno, jahody,Postel
 Arabela,Prsten
-Rumburak,Havran
 Krtek,Kalhoty
 Spejbl a Hurvínek,Dřevo
 Pat a Mat,Svetr
@@ -149,7 +123,7 @@ Večerníček,Čepice
 Pohádky z mechu a kapradí,Pařez
 Maxipes Fík,Misko
 Králící z klobouku,Uši
-Pojďte pane, budeme si hrát,Medvěd
+Pojďte pane budeme si hrát,Medvěd
 Lovci duchů,Sliz
 Jurský svět,Pár
 Pacific Rim,Robot
@@ -161,17 +135,9 @@ Predátor,Teplo
 Vetřelec,Vejce
 Blade Runner,Déšť
 Duna,Červ
-Pátý element,Kufřík
-Akira,Motorka
 Ghost in the Shell,Konektor
-Neon Genesis Evangelion,Robot
-Cowboy Bebop,Loď
 Death Note,Jablko
-Sailor Moon,Měsíc
 Osvícení,Sekera
-Vymítač ďábla,Postel
-Noční můra v Elm Street,Rukavice
-Pátek třináctého,Hokejka
 Halloween,Nůž
 Vřískot,Telefon
 Saw,Pila
@@ -187,12 +153,11 @@ Vodník,Hrneček
 Zlatý klíč,Dveře
 Vlasatice,Hvězda
 Popelka,Popel
-Pohádka o princezně Jasněnce a létajícím ševci,Boty
 Tři veteráni,Frňák
 Lotrando a Zubejda,Velbloud
 Šíleně smutná princezna,Lodička
 Princezna se zlatou hvězdou,Myš
-Obušku, z pytle ven!,Obušek
+Obušku z pytle ven!,Obušek
 Dařbuján a Pandrhola,Smrt
 Čertova nevěsta,Květ
 Anděl Páně,Křídla
@@ -217,7 +182,6 @@ Krtek,Lopatička
 Malá čarodějnice,Havran
 Kocour Modroočko,Mléko
 Maxipes Fík,Pivo
-Pojďte pane, budeme si hrát,Medvědi
 Včelí medvídci,Květ
 Broučci,Lucerna
 Rumcajs,Pistole
@@ -235,4 +199,4 @@ Arabela,Prsten
 Krtek,Kalhoty
 Mach a Šebestová,Telefon
 Krkonošské pohádky,Trautenberk
- večerníček,auto
+Večerníček,auto

@@ -57,7 +57,6 @@ Sumec,Vousy
 Žralok,Ploutev
 Velryba,Výstřik
 Delfín,Skok
-Tulpe,Led
 Lachtan,Cirkus
 Lední medvěd,Arktida
 Tučňák,Antarktida
@@ -154,7 +153,6 @@ Slimák,Sliz
 Pijavice,Krev
 Tasemnice,Střevo
 Blecha,Skok
-Veš,Hlava
 Štěnice,Postel
 Mandelinka,List
 Saranče,Roj
@@ -173,7 +171,6 @@ Holub,Město
 Hrdlička,Láska
 Datel,Kůra
 Strakapoud,Pruhy
-Žluna,Zelená
 Sýček,Osud
 Výr,Uši
 Pustík,Les
@@ -254,7 +251,6 @@ Rys,Štětinky
 Divoká kočka,Les
 Serval,Uši
 Ocelot,Vzor
-Karakal,Skok
 Panter,Stín
 Sněžný levhart,Sníh
 Horský lev,Skála
@@ -361,7 +357,6 @@ Lemur,Ocas
 Nártoun,Oko
 Pavián,Tvář
 Makak,Sníh
-Kosman,Malý
 Tamarín,Vousy
 Vřešťan,Hlas
 Chápan,Ruce
@@ -373,7 +368,6 @@ Ježura,Bodliny
 Klokan,Skok
 Koala,Spánek
 Vombat,Nora
-Ďábel medvědovitý,Křik
 Vakoveverka,Blána
 Vakovlk,Vymřelý
 Kuskus,Ocas
@@ -410,8 +404,6 @@ Papoušek,Slovo
 Ara,Barvy
 Kakadu,Chocholka
 Andulka,Zrcátko
-Lori,Nektar
-Žako,Mluvení
 Kolibřík,Květ
 Ledňáček,Voda
 Vlha,Hmyz
@@ -419,7 +411,6 @@ Mandelík,Modrá
 Dudek,Chocholka
 Datel,Kůra
 Strakapoud,Bílá
-Žluna,Zelená
 Tukan,Zobák
 Vlaštovka,Hnízdo
 Jiřička,Bláto
@@ -431,12 +422,9 @@ Drozd,Zpěv
 Slavík,Zpěv
 Pěnice,Křoví
 Budníček,Les
-Lejsek,Mucholapka
-Konipas,Ocas
 Pěnkava,Zahrada
 Stehlík,Barvy
 Čížek,Žlutá
-Dlask,Zobák
 Hýl,Červená
 Špaček,Hejno
 Žluva,Žlutá
@@ -448,18 +436,12 @@ Sojka,Pírko
 Kavka,Věž
 Rejnok,Plochost
 Žralok,Čelist
-Muréna,Díra
 Mořský koník,Ocas
-Vranka,Kameny
-Mník,Vous
 Úhoř,Sliz
-Lín,Bahno
 Cejn,Vysoký
 Plotice,Červená
 Ouklej,Stříbro
 Pstruh,Tečky
-Lípan,Ploutev
-Hlavatka,Dunaj
 Štika,Zuby
 Candát,Písek
 Okoun,Pruhy
@@ -468,18 +450,11 @@ Kapr,Stůl
 Karas,Odolnost
 Amur,Bylinožravý
 Ceň,Voda
-Bolen,Útok
-Mřenka,Potok
-Piskoř,Bahno
-Sekavec,Písek
 Mihule,Kruh
-Slunka,Malá
 Ostroun,Trn
 Sumeček,Amerika
 Střevle,Čistota
 Podoustev,Nos
-Parma,Vousy
-Amfioxus,Strunatec
 Oliheň,Ramena
 Sépie,Barva
 Chobotnice,Kalamár
@@ -540,7 +515,6 @@ Roup,Střevo
 Škrkavka,Břicho
 Vlasovec,Noha
 Svalovec,Maso
-Háďátko,Půda
 Tasemnice,Hlavička
 Motolice,Játra
 Nezmar,Hydra
@@ -667,4 +641,4 @@ Sfinx,Téby
 Karybda,Moře
 Skylla,Útes
 Sphinx,Hádanka
- Phoenix,Pták
+Phoenix,Pták

@@ -12,7 +12,6 @@ Tacos,Placka
 Lasagne,Bešamel
 Hotdog,Hořčice
 Rizoto,Vinařství
-Svátostka,Cukr
 Tortilla,Zavinutí
 Burrito,Fazole
 Paella,Šafrán
@@ -47,13 +46,11 @@ Croissant,Máslo
 Brioška,Snídaně
 Bagueta,Křupavost
 Quiche,Vejce
-Bouillabaisse,Moře
 Crème Brûlée,Karamel
 Fondue,Sýr
 Raclette,Škrabka
 Rösti,Brambory
 Wiener Schnitzel,Telecí
-Gulaschsuppe,Paprika
 Preclík,Sůl
 Štrúdl,Jablka
 Sacher dort,Čokoláda
@@ -82,7 +79,6 @@ Guacamole,Avokádo
 Quesadilla,Sýr
 Enchiladas,Omáčka
 Ceviche,Citron
-Feijoada,Maso
 Churros,Skořice
 Empanadas,Kapsa
 Steak,Média
@@ -100,19 +96,16 @@ Losos,Růžová
 Tuňák,Konzerva
 Kapr,Vánoce
 Pstruh,Máslo
-Treska,Smažení
 Sardinky,Olej
 Makrela,Uzení
 Sýr,Mléko
 Eidam,Plátek
 Hermelín,Plíseň
 Niva,Modrá
-Niva,Sůl
 Mozzarella,Kulička
 Parmigiano,Strouhání
 Cheddar,Oranžová
 Feta,Balkán
-Roquefort,Jeskyně
 Camembert,Bílá
 Brie,Měkkost
 Gouda,Kolo
@@ -172,11 +165,9 @@ Ostružiny,Trny
 Rybíz,Kuličky
 Angrešt,Bodlinky
 Třešně,Uši
-Višně,Kyselo
 Švestky,Povidla
 Meruňky,Pecka
 Broskve,Samet
-Nektarinky,Hladkost
 Hroznové víno,Réva
 Meloun,Voda
 Kiwi,Chloupky
@@ -194,7 +185,6 @@ Pórek,Bílá
 Mrkev,Králík
 Celer,Kořen
 Petržel,Nať
-Brambora,Lilek
 Kukuřice,Klas
 Hrášek,Lusk
 Špenát,Pepek
@@ -207,22 +197,19 @@ Cuketa,Zahrada
 Dýně,Halloween
 Řepa,Barva
 Ředkvička,Pálivost
-Kedlubna,Loupání
 Salát,Listy
 Rukola,Pálivost
-Špenát,Železo
 Houby,Les
 Žampiony,Pizza
 Hřiby,Smaženice
 Lišky,Žlutá
-Lanýže,Prase
 Mák,Buchty
 Sezam,Houska
 Slunečnice,Semínka
 Marmeláda,Ovoce
 Džem,Kousky
 Med,Včela
-Nutella,Lískat
+Nutella,Lískáč
 Hořčice,Párek
 Kečup,Rajčata
 Tatarka,Smažák
@@ -245,16 +232,13 @@ Zákusek,Cukrárna
 Perník,Srdce
 Vánočka,Pletení
 Mazanec,Velikonoce
-Kobliha,Kobliha
+Kobliha,Cukr
 Větrník,Karamel
 Laskonka,Sníh
-Krémeš,Listování
-Kandované ovoce,Barvy
 Žužu,Měkkost
 Lékořice,Černá
 Marcipán,Mandle
 Fondán,Potah
-Karneval,Maska
 Guláš,Kotlík
 Polévka,Talíř
 Hlavní chod,Vidlička
@@ -293,12 +277,11 @@ Zázvor,Pálivost
 Skořice,Štrúdl
 Hřebíček,Svařák
 Badyán,Hvězda
-Kardamom,Káva
 Vanilka,Lusk
 Muškátový oříšek,Strouhání
 Bobkový list,Omáčka
 Nové koření,Kulička
-Pálivá paprika,Chilli
+Chilli,Pálivost
 Kari,Indie
 Pepř,Černá
 Hořčice,Semínko
@@ -339,13 +322,7 @@ Smoothie,Mixér
 Párty,Lidi
 Restaurace,Menu
 Kavárna,Vůně
-Cukrárna,Sladko
-Pivnice,Půllitr
-Vinotéka,Korek
-Fastfood,Rychlost
-Bistro,Lehkost
-Bufet,Tác
-Jídelna,Škola
+Supermarket,Regál
 Kuchyně,Vařečka
 Spižírna,Police
 Lednice,Chlad

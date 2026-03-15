@@ -5,6 +5,7 @@ import castiTelaRaw from './casti_tela.csv?raw';
 import veciRaw from './veci.csv?raw';
 import obleceniRaw from './obleceni.csv?raw';
 import filmyRaw from './filmy.csv?raw';
+import osobnostiRaw from './slavne_osobnosti.csv?raw';
 
 const parseCSV = (csv) => {
   if (!csv) return [];
@@ -29,4 +30,5 @@ export const CATEGORIES = {
   'Věci': parseCSV(veciRaw),
   'Oblečení': parseCSV(obleceniRaw),
   'Filmy/Seriály': parseCSV(filmyRaw),
+  'Slavné osobnosti': parseCSV(osobnostiRaw),
 };
