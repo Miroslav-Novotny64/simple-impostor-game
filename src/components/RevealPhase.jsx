@@ -1,6 +1,6 @@
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Eye, Check, AlertCircle, ArrowRight } from 'lucide-react';
+import { Eye, Check, AlertCircle, ArrowRight, Search } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 /**
@@ -49,7 +49,7 @@ const RevealPhase = ({
       <div className="perspective-1000 w-full max-w-[280px] sm:max-w-[320px] aspect-4/5 min-h-[350px] sm:min-h-[400px] relative">
         <motion.div
           className="w-full h-full preserve-3d"
-          animate={{ rotateY: holdProgress === 100 ? 180 : 0 }}
+          animate={{ rotateY: (hasRevealed || holdProgress === 100) ? 180 : 0 }}
           transition={{ type: "spring", stiffness: 260, damping: 25 }}
         >
           <div
@@ -101,6 +101,17 @@ const RevealPhase = ({
                       <p className="text-muted-foreground uppercase text-xs font-bold tracking-widest mb-1">Tvoje slovo</p>
                       <h3 className="text-5xl font-black text-primary italic wrap-break-word leading-tight tracking-tighter">{secretWord.word}</h3>
                     </div>
+                    
+                    <a
+                      href={`https://www.google.com/search?q=${encodeURIComponent(secretWord.word)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary/5 text-primary/60 hover:text-primary hover:bg-primary/10 transition-all text-xs font-bold uppercase tracking-wider relative z-30"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <Search size={14} />
+                      Co to je?
+                    </a>
                   </div>
                 </>
               )}
@@ -109,7 +120,10 @@ const RevealPhase = ({
         </motion.div>
 
         <div 
-          className="absolute inset-0 z-10 cursor-pointer touch-none"
+          className={cn(
+            "absolute inset-0 z-20 cursor-pointer touch-none",
+            hasRevealed && "hidden"
+          )}
           onPointerDown={handleHoldStart}
           onPointerUp={handleHoldEnd}
           onPointerLeave={handleHoldEnd}
