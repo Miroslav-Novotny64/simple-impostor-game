@@ -15,7 +15,7 @@ const parseCSV = (csv) => {
       const parts = line.split(',');
       if (parts.length < 2) return null;
       const word = parts[0].trim();
-      const hint = parts.slice(1).join(',').trim(); // Handle accidental commas in hints
+      const hint = parts.slice(1).join(',').trim();
       return { word, hint };
     })
     .filter(item => item && item.word && item.hint);
