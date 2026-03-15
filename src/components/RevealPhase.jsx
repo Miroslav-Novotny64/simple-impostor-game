@@ -35,18 +35,18 @@ const RevealPhase = ({
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -20 }}
-      className="flex flex-col items-center justify-center min-h-[85vh] gap-10"
+      className="flex flex-col items-center justify-center flex-1 gap-6 sm:gap-10 py-2 sm:py-0 w-full"
     >
-      <div className="text-center space-y-4">
-        <div className="inline-block px-4 py-1.5 rounded-full bg-primary/20 border border-primary/30">
-          <p className="text-primary-foreground font-black uppercase tracking-widest text-[10px]">Předat hráči</p>
+      <div className="text-center space-y-2 sm:space-y-4">
+        <div className="inline-block px-3 py-1 rounded-full bg-primary/80 border border-primary">
+          <p className="text-foreground font-black uppercase tracking-widest text-[8px] sm:text-[10px]">Předat hráči</p>
         </div>
-        <h2 className="text-6xl font-black text-foreground drop-shadow-md italic tracking-tighter">
+        <h2 className="text-4xl sm:text-6xl font-black text-foreground drop-shadow-md italic tracking-tighter">
           {players[currentPlayerReveal].name}
         </h2>
       </div>
 
-      <div className="perspective-1000 w-full max-w-[320px] aspect-4/5 min-h-[400px] relative">
+      <div className="perspective-1000 w-full max-w-[280px] sm:max-w-[320px] aspect-4/5 min-h-[350px] sm:min-h-[400px] relative">
         <motion.div
           className="w-full h-full preserve-3d"
           animate={{ rotateY: holdProgress === 100 ? 180 : 0 }}

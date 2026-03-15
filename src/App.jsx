@@ -9,6 +9,8 @@ import RevealPhase from './components/RevealPhase';
 import DiscussionPhase from './components/DiscussionPhase';
 import HowToPlayModal from './components/HowToPlayModal';
 import Footer from './components/Footer';
+import PWAInstallModal from './components/PWAInstallModal';
+import { Download } from 'lucide-react';
 
 function App() {
   const [gameState, setGameState] = useState('lobby');
@@ -172,7 +174,10 @@ function App() {
     setGameState('reveal');
     setHoldProgress(0);
     setHasRevealed(false);
-    window.history.pushState({ gameState: 'reveal', currentPlayerReveal: 0 }, '');
+    window.history.pushState({ 
+      gameState: 'reveal', 
+      currentPlayerReveal: 0
+    }, '');
   };
 
   const handleHoldStart = (e) => {
@@ -201,10 +206,15 @@ function App() {
       setCurrentPlayerReveal(nextIndex);
       setHoldProgress(0);
       setHasRevealed(false);
-      window.history.pushState({ gameState: 'reveal', currentPlayerReveal: nextIndex }, '');
+      window.history.pushState({ 
+        gameState: 'reveal', 
+        currentPlayerReveal: nextIndex
+      }, '');
     } else {
       setGameState('discussion');
-      window.history.pushState({ gameState: 'discussion' }, '');
+      window.history.pushState({ 
+        gameState: 'discussion'
+      }, '');
     }
   };
 
@@ -261,11 +271,37 @@ function App() {
     setTheme(prev => prev === 'dark' ? 'light' : 'dark');
   };
   const [showHowToPlay, setShowHowToPlay] = useState(false);
+  const [showPWAInstall, setShowPWAInstall] = useState(false);
+  const [isStandalone, setIsStandalone] = useState(false); // Default to false so button shows until detected otherwise
+
+  useEffect(() => {
+    const checkPWA = () => {
+      const standalone = window.matchMedia('(display-mode: standalone)').matches 
+        || window.navigator.standalone 
+        || document.referrer.includes('android-app://');
+      setIsStandalone(!!standalone);
+    };
+
+    checkPWA();
+    window.matchMedia('(display-mode: standalone)').addListener(checkPWA);
+  }, []);
+
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  const canShowInstall = isMobile && !isStandalone;
 
   return (
     <div className="min-h-dvh bg-background text-foreground p-4 flex flex-col items-center justify-start overflow-x-hidden font-sans transition-colors duration-300">
-      <div className="w-full max-w-md flex flex-col h-full gap-6 relative">
+      <div className="w-full max-w-md flex flex-col min-h-full gap-4 sm:gap-6 relative">
         <div className="absolute right-0 top-0 flex gap-2 z-50">
+          {canShowInstall && (
+            <button
+              onClick={() => setShowPWAInstall(true)}
+              className="p-3 rounded-2xl bg-primary text-primary-foreground shadow-lg shadow-primary/20 animate-bounce-subtle hover:scale-105 active:scale-95 transition-all"
+              aria-label="Install app"
+            >
+              <Download size={20} />
+            </button>
+          )}
           <button
             onClick={() => setShowHowToPlay(true)}
             className="p-3 rounded-2xl bg-secondary/50 backdrop-blur-md border border-primary/10 text-primary shadow-sm hover:scale-105 active:scale-95 transition-all"
@@ -285,6 +321,11 @@ function App() {
         <HowToPlayModal 
           isOpen={showHowToPlay} 
           onClose={() => setShowHowToPlay(false)} 
+        />
+
+        <PWAInstallModal
+          isOpen={showPWAInstall}
+          onClose={() => setShowPWAInstall(false)}
         />
 
         <AnimatePresence mode="wait">
@@ -326,7 +367,10 @@ function App() {
           )}
 
           {gameState === 'discussion' && (
-            <DiscussionPhase resetGame={resetGame} />
+            <DiscussionPhase 
+              resetGame={resetGame} 
+              players={players}
+            />
           )}
         </AnimatePresence>
 
