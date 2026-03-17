@@ -290,7 +290,7 @@ function App() {
   const canShowInstall = isMobile && !isStandalone;
 
   return (
-    <div className="min-h-dvh bg-background text-foreground p-4 flex flex-col items-center justify-start overflow-x-hidden font-sans transition-colors duration-300">
+    <div className="min-h-dvh bg-background text-foreground p-4 flex flex-col items-center justify-start overflow-x-hidden font-sans transition-colors duration-300 bg-mesh">
       <div className="w-full max-w-md flex flex-col min-h-full gap-4 sm:gap-6 relative">
         <div className="absolute right-0 top-0 flex gap-2 z-50">
           {canShowInstall && (

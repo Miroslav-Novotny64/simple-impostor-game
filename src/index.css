@@ -47,32 +47,32 @@
 
 @layer base {
   :root {
-    --background: hsl(52 90% 94%); /* #fefae0 */
-    --foreground: hsl(46 10% 10%);
+    --background: hsl(210 40% 98%);
+    --foreground: hsl(222 47% 11%);
 
-    --card: hsl(52 90% 94%);
-    --card-foreground: hsl(46 10% 10%);
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(222 47% 11%);
 
-    --popover: hsl(52 90% 94%);
-    --popover-foreground: hsl(46 10% 10%);
+    --popover: hsl(0 0% 100%);
+    --popover-foreground: hsl(222 47% 11%);
 
-    --primary: hsl(46 100% 50%); /* #ffc300 */
+    --primary: hsl(46 100% 50%); /* #ffc300 - keeping the signature yellow for branding */
     --primary-foreground: hsl(46 100% 5%);
 
-    --secondary: hsl(46 100% 90%);
-    --secondary-foreground: hsl(46 100% 10%);
+    --secondary: hsl(210 40% 96.1%);
+    --secondary-foreground: hsl(222 47% 11.2%);
 
-    --muted: hsl(52 30% 85%);
-    --muted-foreground: hsl(46 10% 35%);
+    --muted: hsl(210 40% 96.1%);
+    --muted-foreground: hsl(215.4 16.3% 46.9%);
 
-    --accent: hsl(46 100% 85%);
-    --accent-foreground: hsl(46 100% 10%);
+    --accent: hsl(210 40% 96.1%);
+    --accent-foreground: hsl(222 47% 11.2%);
 
-    --destructive: hsl(0 84.2% 45%);
+    --destructive: hsl(0 84.2% 60.2%);
     --destructive-foreground: hsl(210 40% 98%);
 
-    --border: hsl(46 20% 85%);
-    --input: hsl(46 20% 85%);
+    --border: hsl(214.3 31.8% 91.4%);
+    --input: hsl(214.3 31.8% 91.4%);
     --ring: hsl(46 100% 50%);
 
     --radius: 1rem;
