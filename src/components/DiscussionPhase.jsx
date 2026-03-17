@@ -47,7 +47,7 @@ const DiscussionPhase = ({ resetGame, players }) => {
             transition={{ duration: 0.8, type: "spring" }}
             className="text-6xl font-black text-primary italic leading-tight uppercase tracking-tighter"
           >
-            DISKUSE
+            DIZKUZE
           </motion.h2>
         </div>
 
