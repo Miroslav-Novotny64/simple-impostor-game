@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 /**
  * Footer Component
- * Renders the page footer with social links and copyright.
+ * Renders the page footer with social links, copyright, and author attribution.
  */
 const Footer = () => {
   return (
@@ -35,9 +35,20 @@ const Footer = () => {
           <Mail size={24} />
         </a>
       </div>
-      <p className="text-[10px] font-black uppercase tracking-[0.3em] text-muted-foreground/50 italic">
-        &copy; {new Date().getFullYear()} Simple Impostor Game
-      </p>
+
+      <div className="flex flex-col items-center gap-2">
+        <p className="text-[10px] font-black uppercase tracking-[0.3em] text-muted-foreground/50 italic">
+          &copy; {new Date().getFullYear()} Simple Impostor Game
+        </p>
+        <a 
+          href="https://novotnymiroslav.cz" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-[10px] font-medium uppercase tracking-[0.15em] text-muted-foreground/40 hover:text-primary transition-colors decoration-primary/30 underline-offset-4 hover:underline"
+        >
+          Made by Miroslav Novotný
+        </a>
+      </div>
     </footer>
   );
 };
